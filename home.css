@@ -1,0 +1,106 @@
+ 
+ /* Background image section */
+ .bg{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(A1.webp);
+	background-size: cover;
+	height: 90vh;
+	background-position: center;
+	/* background-attachment: fixed; */
+}
+/* anchor link  section */
+div li a{
+    text-decoration: none ;
+	color: black;
+	padding: 5px 20px;
+	transition: 0.6s ease;
+	/* position: sticky; */
+}
+div li a:hover{
+	background-color: rgb(128, 236, 246);
+}
+/* logo section */
+.logo{
+    margin-right: 5px;
+    border: none;
+}
+/* Title section */
+.title h1{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/* button section */
+.button{
+	position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		display: inline;
+	}
+	.but{
+		border: 1px solid black;
+		padding: 10px 30px;
+		color: rgb(1, 14, 15);
+		text-decoration: none;
+		transition: 0.6s ease;
+		display: inline;
+		
+	}
+	.but:hover{
+		background-color: rgb(128, 236, 246);
+		color: black;
+	}
+	/* Icons section */
+	.icons{
+    position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-weight: bolder;
+	/* display: inline-block; */
+	}
+	.icons i:hover{
+		background-color: rgb(128, 236, 246);
+		transition: 0.6 ease;
+		border: transparent;
+	}
+	/* Media query Responsive section */
+	/* Button media query */
+	@media screen and (max-width: 700px) {
+		.button{
+			width: 70%;
+			/* display: inline-flex; */
+			/* display: flex; */
+			padding-left: 50px;
+		}
+	}
+		@media screen and (max-width: 700px) {
+			.academy{
+				display: inline-flex;
+				font-size: 25px;
+			}
+		}
+		/* Icons media query */
+			@media screen and (max-width: 700px) {
+				.icons{
+					width: 30%;
+					display: flex;
+				}
+			}
+			/* nav media query */
+			@media screen and (max-width: 700px) {
+				#navigation{
+               z-index: 2;
+
+				}
+			}
+			/* background media query */
+			@media screen and (max-width: 700px) {
+				.bg{
+                   background-position: center;
+				   background-size: cover;
+	               height: 90vh;
+				}
+			}
+		
